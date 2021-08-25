@@ -1,0 +1,274 @@
+/* style.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 1em;
+}
+
+h4 {
+  font-size: 22px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  background-image: url(images/purty_wood.png);
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.fw300 {
+  font-weight: 300;
+}
+.fw400 {
+  font-weight: 400;
+}
+.fw500 {
+  font-weight: 500;
+}
+.fw900 {
+  font-weight: 900;
+}
+
+article p {
+  line-height: 1.8;
+}
+
+#main_header {
+  position: relative;
+  width: 1400px;
+  margin: 0 auto;
+  background: #fff;
+  height: 200px;
+  padding-top: 35px;
+  margin-top: 100px;
+  border: 1px solid #dfdfdf;
+}
+
+#main_header > .barcode {
+  position: absolute;
+  width: 200px;
+  left: 30px;
+  top: 60px;
+}
+#main_header > .header_group{
+  text-align: center;
+}
+#main_header > .time{
+  position: absolute;
+  right: 30px;
+  top: 50px;
+}
+
+.header_group .sub-title{
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+.header_group > h1 {
+  font-size: 76px;
+  line-height: 76px;
+  margin-bottom: 0.5rem; /* 기본 글자 1칸 크기 */
+}
+
+.header_group {
+
+}
+.header_group .copy {
+  text-transform: uppercase;
+  font-size: small;
+  color: #333;
+}
+.time {
+  font-size: 2em;
+  text-align: right;
+}
+
+.day {
+  padding-top: 15px;
+  font-size: 30px;
+  margin: 0;
+}
+.date {
+  letter-spacing: 1.3px;
+  font-size: 30px;
+}
+
+#gnb {
+  width: 1400px;
+  background: #fff;
+  margin: 0 auto;
+  border-top: 1px solid #000;
+  border-bottom: 3px solid #000;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#gnb ul {
+  overflow: hidden;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#gnb ul li {
+  float: left;
+  width: calc(100% / 5);
+  text-align: center;
+  border-left: 1px solid #000;
+}
+
+/* 마지막 li 우측에 선 추가 */
+#gnb ul li:last-child {
+  border-right: 1px solid #000;
+}
+
+#gnb ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+
+#contents {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  column-count: 3;
+}
+
+article {
+  break-after: column;
+}
+article img {
+  width: 100%;
+}
+
+.today img {
+  width: 100px;
+}
+
+article:first-child h2{
+  text-align: center;
+  margin-bottom: 1em;
+  font-family: 'Times New Roman', Times, serif;
+  letter-spacing: 2px;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+article:nth-child(2) h2 span{
+  font-weight: normal;
+}
+
+.arrow { 
+  font-size: small;
+  color: red;
+}
+.more_btn {
+  text-transform: uppercase;
+  color: #444;
+  margin-left: 1em;
+}
+
+.banner1, .banner2{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#sidebar figure {
+  position: relative;
+  padding: 1.5em 2.5em;
+  border: 2px solid #000;
+}
+#sidebar figure h3 {
+  font-size: 36px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+hr {
+  background: #ccc;
+  border-width: 0;
+  height: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.left-btn, .right-btn {
+  position: absolute;
+  color: red;
+  font-size: 20px;
+}
+
+.left-btn {
+  left: 10px;
+  top: 160px;
+}
+.right-btn {
+  right: 10px;
+  top: 160px;
+}
+
+#sidebar .today {
+  border-bottom: 1px solid #000;
+  padding-bottom: 1em;
+}
+
+#sidebar > .today > a {
+  display: block;
+  overflow: hidden;
+}
+
+#sidebar > .today > a > img {
+  float: left;
+  margin-right: 1em;
+}
+#sidebar > .today > a > .info {
+  float: left;
+  padding-top: 1em;
+}
+#sidebar > .today > a > .info > p {
+  margin: 0;
+}
+#sidebar .info > p.name > span {
+  font-size: 1.2em;
+}
+
+#sidebar h4 {
+  margin-top: 10px;
+}
+
+.notice ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  color: red;
+}
+.notice ul li {
+  margin-bottom: 2px;
+  margin-top: 2px;
+}

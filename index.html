@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News Paper Style Layout</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <header id="main_header">
+    <img src="images/barcode.png" alt="바코드" class="barcode">
+    <div class="header_group">
+      <p class="sub-title">IWEBDY TIMES</p>
+      <h1>WEB DESIGN NEWS</h1>
+      <p class="copy">dongbang 2f, seogyodong 330-28, mapogu, seoul korean / copyright&copy; 2001~2021 iwebdy all right
+        reserved</p>
+    </div>
+    <div class="time fw500">
+      <p class="day">MONDAY</p>
+      <p class="date">20210621</p>
+    </div>
+  </header>
+  <nav id="gnb">
+    <ul>
+      <li><a href="#">webdy report</a></li>
+      <li><a href="#">e creative website</a></li>
+      <li><a href="#">good design site</a></li>
+      <li><a href="#">webdesign trand</a></li>
+      <li><a href="#">webdy academy</a></li>
+    </ul>
+  </nav>
+
+  <!-- title 주제 이미지: gif animation 이미지 -->
+  <section id="contents">
+    <article>
+      <h2>MOVIE<br>WEBSITE<br>TRAND</h2>
+      <p>용기가 청춘 예수는 피부가 옷을 찬미를 봄바람이다. 얼마나 할지라도 인간이 전인 싹이 하는 있는 희망의 힘차게 피다. 되는 청춘 못할 그들에게 피가 안고, 이것은 것은 위하여, 뿐이다. 끓는 그러므로 살
+        가슴이 붙잡아 인간에 것이다. 희망의 뼈 눈에 고행을 수 스며들어 같은 있으랴</p>
+      <p>
+        끓는 이상의 위하여 사람은 때문이다. 뭇 황금시대의 같이, 끓는 풍부하게 봄바람이다. 꽃이 살 싶이 우는 물방아 위하여, 뿐이다. 따뜻한 관현악이며, 수 피고 이상 노년에게서 실로 거친 능히 것이다.
+        힘차게 내는 날카로우나 청춘 그들의 끓는다. 있는 피가 가는 굳세게 그들은 것이다. 끓는 바이며, 사라지지 밥을 그들은 산야에 오직 아름다우냐?</p>
+        <a href="#" class="more_btn">more <span class="arrow">▶</span></a>
+        <div class="banner1">
+          <a href="#">
+            <img src="./images/be.jpg" alt="banner1">
+          </a>
+        </div>
+    </article>
+    <article>
+      <img src="./images/200w.gif" alt="타이틀 기사 이미지">
+      <h2>interactive media<span>의 세계</span></h2>
+      <p>인터랙티브 미디어(Interactive Media)란 무엇일까요? 인터랙티브 미디어는 커뮤니케이션 수단의 하나로 사용자의 동작에 프로그램이 반응하고 프로그램의 반응에 사용자가 영향을 받는 상호작용하는 미디어를 뜻합니다. 
+      우리가 흔히 접하는 웹사이트나 게임 등이 이 인터랙티브 미디어의 한 종류인데요. 요즘에는 웹 디바이스 안에서 뿐만 아니라 3차원의 물리적인 공간에도 적용되는 경우가 많아지고 있습니다. 기술에 대해서는 1도 모르는 디자이너이지만 디자인에 효과적이고 입체적으로 접근하는 방식으로서 인터랙티브 미디어에 관심을 갖게 되었는데요. 디자인 기반의 스튜디오 Dalziel and Pow가 인터랙티브 미디어 월(Interactive Media Wall)을 만든 과정을 소개합니다.</p>
+      <a href="#" class="more_btn">more <span class="arrow">▶</span></a>
+    </article>
+    <article id="sidebar">
+    </article>
+    <article id="sidebar">
+      <figure>
+        <a class="siteLink" href="#" target="_blank">
+          <h3>GOOD DESIGN SITE</h3>
+          <img src="images/site1.png" alt="SWAB THE WORLD">
+          <hr>
+          <figcaption>
+            <span class="url">http://swabtheworld.com/fr/</span>
+            <br>
+            <span class="home_title" >SWAB THE WORLD</span></figcaption>
+        </a>
+        <a href="#" class="left-btn" onclick="prevSiteInfo();" ><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        <a href="#" class="right-btn" onclick="nextSiteInfo();" ><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+      </figure>
+        <div class="today">
+          <a href="#">
+            <h4><span class="fw400">오늘의</span> 추천명함</h4>
+            <img src="./images/ruda.jpg"  alt=" 프리랜서 스타일리스트 홍길동">
+            <div class="info">
+              <p class="fw500 name">24개월의 영어신동 <span>이루다</span></p>
+              <p class="email">ruda@naver.com</p>
+            </div>
+          </a>
+        </div>
+        <div class="notice">
+            <h4><span class="fw400">오늘의</span> 세미나</h4>
+            <ul>
+              <li><a href="#">웹 디자이너를 위한 실전 CSS</a></li>
+              <li><a href="#">웹크리에이티브 디렉터 세미나</a></li>
+              <li><a href="#">파워 프리젠테이션 스킬업 워크샵</a></li>
+              <li><a href="#">차세대 데이터센터 구현을 위한 온라인 세미나</a></li>
+              <li><a href="#">비즈니스 글쓰기 전략 워크샵</a></li>
+            </ul>
+          </div>
+          <div class="banner1">
+            <a href="#">
+              <img src="./images/ban.jpg" alt="banner1">
+            </a>
+          </div>
+        </article>
+      </section>
+    
+      <script src="main.js" ></script>
+    </body>
+    
+    </html>
